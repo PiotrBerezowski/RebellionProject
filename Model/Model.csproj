@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add\AddGroup.cs" />
+    <Compile Include="Add\AddMission.cs" />
+    <Compile Include="Add\AddRebel.cs" />
     <Compile Include="Delete\DeleteRebelById.cs" />
     <Compile Include="Group.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -78,6 +81,9 @@
     <Compile Include="Select\SelectGroupById.cs" />
     <Compile Include="Select\SelectMissionById.cs" />
     <Compile Include="Select\SelectRebelById.cs" />
+    <Compile Include="Update\UpdateGroup.cs" />
+    <Compile Include="Update\UpdateMission.cs" />
+    <Compile Include="Update\UpdateRebel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Model.edmx">
@@ -105,6 +111,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
