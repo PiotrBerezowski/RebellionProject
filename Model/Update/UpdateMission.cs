@@ -4,31 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.Add
+namespace Model.Update
 {
-    public class AddMission
+    public class UpdateMission
     {
-        RebellionDataEntities context;
-
-        public AddMission(RebellionDataEntities Context)
-        {
-            context = Context;
-        }
-
-        public void CreateNewMission(string MissionName, int MissionID, string Type, int GroupID)
+        private void UpdateMission(string MissionName, int MissionID, string Type, int GroupID)
         {
             string missionName = MissionName;
             int missionId = MissionID;
             string type = Type;
             int groupId = GroupID;
-            using (context)
+            using (var context = new RebellionDataEntities())
             {
-                Mission mission = new Mission();
+                var mission = context.Missions.Find(missionId);
                 mission.mission_name = missionName;
                 mission.mission_id = missionId;
                 mission.type = type;
                 mission.Fk_group_id = groupId;
-                context.Missions.Add(mission);
                 context.SaveChanges();
             }
         }

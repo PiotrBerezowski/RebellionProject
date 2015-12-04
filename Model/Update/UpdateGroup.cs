@@ -4,29 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.Add
+namespace Model.Update
 {
-    public class AddGroup
+    public class UpdateGroup
     {
-        RebellionDataEntities context;
-
-        public AddGroup(RebellionDataEntities Context)
-        {
-            context = Context;
-        }
-
-        public void CreateNewGroup(string GroupName, int GroupID, string Territory)
+        private void UpdateGroup(string GroupName, int GroupID, string Territory)
         {
             string groupName = GroupName;
             string territory = Territory;
             int groupId = GroupID;
-            using (context)
+            using (var context = new RebellionDataEntities())
             {
-                Group group = new Group();
+                var group = context.Groups.Find(groupId);
                 group.group_name = groupName;
                 group.territory = territory;
                 group.group_id = groupId;
-                context.Groups.Add(group);
                 context.SaveChanges();
             }
         }

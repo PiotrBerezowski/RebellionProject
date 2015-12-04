@@ -81,6 +81,9 @@
     <Compile Include="Select\SelectGroupById.cs" />
     <Compile Include="Select\SelectMissionById.cs" />
     <Compile Include="Select\SelectRebelById.cs" />
+    <Compile Include="Update\UpdateGroup.cs" />
+    <Compile Include="Update\UpdateMission.cs" />
+    <Compile Include="Update\UpdateRebel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Model.edmx">
