@@ -7,44 +7,8 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-    public class AddRebelViewModel : INotifyPropertyChanged
+    public class AddRebelViewModel 
     {
-        private int _rebelId;
-        public int rebelId
-        {
-            get { return _rebelId; }
-            set
-            {
-                _rebelId = value;
-                onPropertyChanged("rebelId");
-            }
-        }
 
-        private string _name;
-        public string name
-        {
-            get { return _name; }
-            set
-            {
-                _name = value;
-
-            }
-        }
-
-        private int _territoryId;
-        public int territoryId
-        {
-            get { return _territoryId; }
-            set { _territoryId = value; onPropertyChanged("territoryId"); }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void onPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
 }

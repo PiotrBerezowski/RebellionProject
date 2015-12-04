@@ -28,4 +28,5 @@ namespace WCF
             return composite;
         }
     }
+
 }

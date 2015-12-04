@@ -55,8 +55,6 @@
     </ApplicationDefinition>
     <Compile Include="AddRebelViewModel.cs" />
     <Compile Include="Command.cs" />
-    <Compile Include="DeleteRebelViewModel.cs" />
-    <Compile Include="EditRebelViewModel.cs" />
     <Compile Include="Navigation\AddPage.xaml.cs">
       <DependentUpon>AddPage.xaml</DependentUpon>
     </Compile>
@@ -78,7 +76,6 @@
     </Compile>
     <Compile Include="Navigation\NavigationViewModel.cs" />
     <Compile Include="SalesOrderDetails.cs" />
-    <Compile Include="SearchFrameViewModel.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="UserDetails.cs" />
     <Page Include="Navigation\AddPage.xaml">
