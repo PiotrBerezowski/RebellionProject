@@ -8,7 +8,7 @@ namespace Model.Update
 {
     public class UpdateMission
     {
-        private UpdateMission(string MissionName, int MissionID, string Type, int GroupID)
+        private void UpdateAMission(string MissionName, int MissionID, string Type, int GroupID)
         {
             string missionName = MissionName;
             int missionId = MissionID;
