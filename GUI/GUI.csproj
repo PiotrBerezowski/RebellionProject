@@ -54,30 +54,50 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AddRebelViewModel.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="DeleteRebelViewModel.cs" />
     <Compile Include="EditRebelViewModel.cs" />
-    <Compile Include="NavigationViewModel.cs" />
+    <Compile Include="Navigation\AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\AddPageViewModel.cs" />
+    <Compile Include="Navigation\DeletePage.xaml.cs">
+      <DependentUpon>DeletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DeletePageViewModel.cs" />
+    <Compile Include="Navigation\EditPage.xaml.cs">
+      <DependentUpon>EditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\EditPageViewModel.cs" />
+    <Compile Include="Navigation\FindPage.xaml.cs">
+      <DependentUpon>FindPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\FindPageViewModel.cs" />
+    <Compile Include="Navigation\Homepage.xaml.cs">
+      <DependentUpon>Homepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\NavigationViewModel.cs" />
     <Compile Include="SalesOrderDetails.cs" />
     <Compile Include="SearchFrameViewModel.cs" />
-    <Compile Include="TempViewModel.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="UserDetails.cs" />
-    <Page Include="AddPage.xaml">
+    <Page Include="Navigation\AddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DeletePage.xaml">
+    <Page Include="Navigation\DeletePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditPage.xaml">
+    <Page Include="Navigation\EditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FindPage.xaml">
+    <Page Include="Navigation\FindPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HomePage.xaml">
+    <Page Include="Navigation\Homepage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
