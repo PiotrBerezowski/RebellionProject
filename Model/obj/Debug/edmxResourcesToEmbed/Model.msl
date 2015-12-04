@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RebellionDataModelStoreContainer" CdmEntityContainer="RebellionDataEntities">
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="RebellionDataModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="territory" ColumnName="territory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Missions">
+      <EntityTypeMapping TypeName="RebellionDataModel.Mission">
+        <MappingFragment StoreEntitySet="Missions">
+          <ScalarProperty Name="mission_id" ColumnName="mission_id" />
+          <ScalarProperty Name="mission_name" ColumnName="mission_name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Fk_group_id" ColumnName="Fk_group_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rebels">
+      <EntityTypeMapping TypeName="RebellionDataModel.Rebel">
+        <MappingFragment StoreEntitySet="Rebels">
+          <ScalarProperty Name="rebel_id" ColumnName="rebel_id" />
+          <ScalarProperty Name="code_name" ColumnName="code_name" />
+          <ScalarProperty Name="Fk_group_id" ColumnName="Fk_group_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

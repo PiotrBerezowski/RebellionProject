@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RebellionDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="group_id" />
+    </Key>
+    <Property Name="group_id" Type="Int32" Nullable="false" />
+    <Property Name="group_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="territory" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Missions" Relationship="Self.FK__Missions__Fk_gro__1BFD2C07" FromRole="Groups" ToRole="Missions" />
+    <NavigationProperty Name="Rebels" Relationship="Self.FK__Rebels__Fk_group__173876EA" FromRole="Groups" ToRole="Rebels" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="mission_id" />
+    </Key>
+    <Property Name="mission_id" Type="Int32" Nullable="false" />
+    <Property Name="mission_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Fk_group_id" Type="Int32" />
+    <NavigationProperty Name="Group" Relationship="Self.FK__Missions__Fk_gro__1BFD2C07" FromRole="Missions" ToRole="Groups" />
+  </EntityType>
+  <EntityType Name="Rebel">
+    <Key>
+      <PropertyRef Name="rebel_id" />
+    </Key>
+    <Property Name="rebel_id" Type="Int32" Nullable="false" />
+    <Property Name="code_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Fk_group_id" Type="Int32" />
+    <NavigationProperty Name="Group" Relationship="Self.FK__Rebels__Fk_group__173876EA" FromRole="Rebels" ToRole="Groups" />
+  </EntityType>
+  <Association Name="FK__Missions__Fk_gro__1BFD2C07">
+    <End Role="Groups" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="Missions" Type="Self.Mission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="Missions">
+        <PropertyRef Name="Fk_group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rebels__Fk_group__173876EA">
+    <End Role="Groups" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="Rebels" Type="Self.Rebel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Groups">
+        <PropertyRef Name="group_id" />
+      </Principal>
+      <Dependent Role="Rebels">
+        <PropertyRef Name="Fk_group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RebellionDataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Groups" EntityType="Self.Group" />
+    <EntitySet Name="Missions" EntityType="Self.Mission" />
+    <EntitySet Name="Rebels" EntityType="Self.Rebel" />
+    <AssociationSet Name="FK__Missions__Fk_gro__1BFD2C07" Association="Self.FK__Missions__Fk_gro__1BFD2C07">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Missions" EntitySet="Missions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rebels__Fk_group__173876EA" Association="Self.FK__Rebels__Fk_group__173876EA">
+      <End Role="Groups" EntitySet="Groups" />
+      <End Role="Rebels" EntitySet="Rebels" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

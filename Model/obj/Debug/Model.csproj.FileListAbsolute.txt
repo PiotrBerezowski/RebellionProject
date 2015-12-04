@@ -1,0 +1,10 @@
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\Model.dll.config
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\Model.dll
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\Model.pdb
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\EntityFramework.dll
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\EntityFramework.xml
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\obj\Debug\Model.dll
+C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\Model\obj\Debug\Model.pdb
