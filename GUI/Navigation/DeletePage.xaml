@@ -26,10 +26,10 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Margin="10,10" />
-            <Button Content="Annihilate" Margin="10,10,10,10" Grid.Row="0" Grid.Column="1" />
-            <TextBox Margin="10,10" Grid.Row="1" Grid.Column="0" />
-            <Button Content="Finish Off" Margin="10,10,10,10" Grid.Row="1" Grid.Column="1" />
+            <TextBox Name="RebelId" Margin="10,10" />
+            <Button Command="{Binding DeleteButton}" CommandParameter="{Binding Text, ElementName=RebelId}" Content="Annihilate" Margin="10,10,10,10" Grid.Row="0" Grid.Column="1" />
+            <TextBox Name="RebelId2" Margin="10,10" Grid.Row="1" Grid.Column="0" />
+            <Button Command="{Binding DeleteButton}" CommandParameter="{Binding Text, ElementName=RebelId2}" Content="Finish Off" Margin="10,10,10,10" Grid.Row="1" Grid.Column="1" />
 
         </Grid>
     </Grid>

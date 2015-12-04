@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace GUI.Navigation
 {
@@ -17,11 +18,38 @@ namespace GUI.Navigation
             set { _source = value; }
         }
 
+        private ICommand _FindButton;
+        public ICommand FindButton
+        {
+            get
+            {
+                if (_FindButton == null)
+                {
+                    _FindButton = new Command(DisplayLists, CanDisplayList);
+                }
+                return _FindButton; 
+            }
+            set 
+            { 
+                _FindButton = value; 
+            }
+        }
+
+        private bool CanDisplayList()
+        {
+            return true;
+        }
+        private void DisplayLists()
+        {
+            salesOrderDetails = new ObservableCollection<SalesOrderDetails>();
+            rebelDetails = new ObservableCollection<UserDetails>();
+        }
+        
+
         public FindPageViewModel()
         {
             source = "FindPage.xaml";
-            salesOrderDetails = new ObservableCollection<SalesOrderDetails>();
-            rebelDetails = new ObservableCollection<UserDetails>();
+
         }
 
         private ObservableCollection<UserDetails> _rebelDetails;

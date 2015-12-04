@@ -8,7 +8,7 @@ namespace Model.Update
 {
     public class UpdateGroup
     {
-        private void UpdateGroup(string GroupName, int GroupID, string Territory)
+        private UpdateGroup(string GroupName, int GroupID, string Territory)
         {
             string groupName = GroupName;
             string territory = Territory;

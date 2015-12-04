@@ -4,11 +4,17 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace GUI.Navigation
 {
     public class DeletePageViewModel: INotifyPropertyChanged
     {
+        public DeletePageViewModel()
+        {
+            source = "DeletePage.xaml";
+        }
+
         private string _source;
         public string source
         {
@@ -27,12 +33,29 @@ namespace GUI.Navigation
             }
         }
 
-        public DeletePageViewModel()
+        private ICommand _DeleteButton;
+        public ICommand DeleteButton
         {
-            source = "DeletePage.xaml";
+            get 
+            {
+                if (_DeleteButton == null)
+                {
+                    _DeleteButton = new Command(DeleteRebel, CanDeleteRebel);
+                }
+                return _DeleteButton; 
+            }
+            set { _DeleteButton = value; }
         }
 
-
+        private bool CanDeleteRebel()
+        {
+            return true;
+        }
+        private void DeleteRebel()
+        {
+            //Do Something
+        }
+        
         public event PropertyChangedEventHandler PropertyChanged;
         private void onPropertyChanged(string propertyName)
         {
