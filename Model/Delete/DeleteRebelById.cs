@@ -8,7 +8,7 @@ namespace Model
 {
     public class DeleteRebelByID
     {
-        public static string DeleteRebel(int id)
+        public string DeleteRebel(int id)
         {
             try
             {
