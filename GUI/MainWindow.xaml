@@ -5,7 +5,7 @@
         Title="MainWindow" Height="350" Width="525">
 
     <Window.DataContext>
-        <viewModel:TempViewModel/>
+        <viewModel:MainWindowViewModel/>
     </Window.DataContext>
 
     <Frame Source="{Binding source}" NavigationUIVisibility="Hidden"/>

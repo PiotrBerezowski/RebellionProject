@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-    public class NavigationViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : INotifyPropertyChanged
     {
-                private string _source;
+        private string _source;
         public string source
         {
             get { return _source; }
@@ -20,14 +20,10 @@ namespace GUI
             }
         }
 
-        public NavigationViewModel()
+        public MainWindowViewModel()
         {
-            source = "HomePage.xaml";
-
+            source = "Navigation/Homepage.xaml";
         }
-
-
-
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void onPropertyChanged(string propertyName)
@@ -38,5 +34,4 @@ namespace GUI
             }
         }
     }
-    
 }
