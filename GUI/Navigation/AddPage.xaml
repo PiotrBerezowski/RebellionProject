@@ -3,10 +3,14 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:addpagevm="clr-namespace:GUI.Navigation"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="AddPage">
 
+    <Page.DataContext>
+        <addpagevm:AddPageViewModel/>
+    </Page.DataContext>
     <Grid Background="#802A2A">
 
         <Grid.RowDefinitions>
@@ -23,15 +27,13 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox  HorizontalAlignment="Center"  Margin="10,5,10,0" Width="200" Height="40" Grid.Row="0"/>
-            <TextBlock IsHitTestVisible="False" Text=" Enter Codename" Grid.Row="0" TextAlignment="Left" Margin="50,16,50,2" Height="30" Foreground="LightGray"  />
-            <TextBox  HorizontalAlignment="Center" Margin="10,5,10,0" Width="200" Height="40" Grid.Row="1"/>
-            <TextBlock IsHitTestVisible="False" Text=" Enter First Name" Grid.Row="1" TextAlignment="Left" Margin="50,16,50,2" Height="30" Foreground="LightGray" />
-            <TextBox  HorizontalAlignment="Center" Margin="10,5,10,0" Width="200" Height="40" Grid.Row="2"/>
-            <TextBlock IsHitTestVisible="False" Text=" Enter Last Name" Grid.Row="2" TextAlignment="Left" Margin="50,16,50,2" Height="30" Foreground="LightGray" />
-            <TextBox  HorizontalAlignment="Center" Margin="10,5,10,0" Width="200" Height="40" Grid.Row="3"/>
-            <TextBlock IsHitTestVisible="False" Text=" Enter Territory" Grid.Row="3" TextAlignment="Left" Margin="50,16,50,2" Height="30" Foreground="LightGray" />
-            <Button Grid.Row="4" Content="Submit" Margin="50,6" Background="LightGray" />
+            <TextBox Text="{Binding rebelId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center"  Margin="10,5,10,0" Width="200" Height="40" Grid.Row="0"/>
+            <TextBlock  IsHitTestVisible="False" Text=" Enter Rebel ID" Grid.Row="0" TextAlignment="Left" Margin="50,16,50,2" Height="30" Foreground="LightGray"  />
+            <TextBox Text="{Binding name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Center" Margin="50,27,50,33" Width="200" Height="40" Grid.Row="1" Grid.RowSpan="2"/>
+            <TextBlock IsHitTestVisible="False" Text=" Enter Codename" Grid.Row="1" TextAlignment="Left" Margin="50,37,50,33" Height="30" Foreground="LightGray" Grid.RowSpan="2" />
+            <TextBox Text="{Binding groupId , Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Center" Margin="50,41,50,19" Width="200" Height="40" Grid.Row="2" Grid.RowSpan="2"/>
+            <TextBlock IsHitTestVisible="False" Text=" Enter Group ID" Grid.Row="3" TextAlignment="Left" Margin="50,0,50,20" Height="30" Foreground="LightGray" />
+            <Button Command="{Binding  AddButtonCommand}"  Grid.Row="4" Content="Submit" Margin="50,6" Background="LightGray" />
 
         </Grid>
     </Grid>

@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -77,6 +79,11 @@
     <Compile Include="Navigation\NavigationViewModel.cs" />
     <Compile Include="SalesOrderDetails.cs" />
     <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Service References\MyServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="UserDetails.cs" />
     <Page Include="Navigation\AddPage.xaml">
       <SubType>Designer</SubType>
@@ -134,9 +141,40 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Service References\MyServiceReference\RebellionDatabase.wsdl" />
+    <None Include="Service References\MyServiceReference\RebellionDatabase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyServiceReference\RebellionDatabase1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyServiceReference\RebellionDatabase2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MyServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyServiceReference\RebellionDatabase.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
