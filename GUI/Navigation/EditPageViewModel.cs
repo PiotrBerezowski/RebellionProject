@@ -4,11 +4,17 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace GUI.Navigation
 {
     public class EditPageViewModel : INotifyPropertyChanged
     {
+        public EditPageViewModel()
+        {
+            source = "EditPage.xaml";
+        }
+
         private string _source;
         public string source
         {
@@ -17,11 +23,6 @@ namespace GUI.Navigation
                 return _source;
             }
             set { _source = value; }
-        }
-
-        public EditPageViewModel()
-        {
-            source = "EditPage.xaml";
         }
 
         private int _id;
@@ -35,7 +36,29 @@ namespace GUI.Navigation
             }
         }
 
+        private ICommand _EditButton;
+        public ICommand EditButton
+        {
+            get 
+            {
+                if (_EditButton == null)
+                {
+                    _EditButton = new Command(EditRebel, CanEditRebel);
+                }
+                return _EditButton; 
+            }
+            set { _EditButton = value; }
+        }
 
+        private bool CanEditRebel()
+        {
+            return true;
+        }
+        private void EditRebel()
+        {
+            //Do Something
+        }
+        
         private string _name;
         public string name
         {

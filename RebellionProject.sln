@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{F6A8FAFD-7368-4D3C-9494-F0B8AA9FA1D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3E86236-6698-4E31-B37A-A6AE2BF5C695} = {E3E86236-6698-4E31-B37A-A6AE2BF5C695}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{58133DF5-ACD2-4AB6-9BF9-0E1E3F7FF096}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{E93B526F-8690-4EDC-8547-92E025E05753}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF", "WCF\WCF.csproj", "{EACC3F1E-9C3D-48D3-80CD-55BCDCF2660D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebellionProject", "..\..\..\ADONET\WCFADONET\RebellionProject2\RebellionProject\RebellionProject\RebellionProject.csproj", "{E3E86236-6698-4E31-B37A-A6AE2BF5C695}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{EACC3F1E-9C3D-48D3-80CD-55BCDCF2660D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACC3F1E-9C3D-48D3-80CD-55BCDCF2660D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACC3F1E-9C3D-48D3-80CD-55BCDCF2660D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E86236-6698-4E31-B37A-A6AE2BF5C695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E86236-6698-4E31-B37A-A6AE2BF5C695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E86236-6698-4E31-B37A-A6AE2BF5C695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E86236-6698-4E31-B37A-A6AE2BF5C695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,8 +24,8 @@
             </Grid.RowDefinitions>
 
             <TextBox Grid.Row="0"  Margin="10,10" />
-            <TextBlock Text=" Enter Rebel ID" Margin="10,10" TextAlignment="Left" VerticalAlignment="Center" Foreground="LightGray"/>
-            <Button Grid.Row="1"  Margin="10,10" Content="Edit Rebel" Background="LightGray"/>
+            <TextBlock  Name="EnterRebelIdTextBox" Text=" Enter Rebel ID" Margin="10,10" TextAlignment="Left" VerticalAlignment="Center" Foreground="LightGray"/>
+            <Button Command="{Binding EditRebelButton}" CommandParameter="{Binding Text, ElementName=EnterRebelIdTextBox}" Grid.Row="1"  Margin="10,10" Content="Edit Rebel" Background="LightGray"/>
         </Grid>
     </Grid>
 </Page>

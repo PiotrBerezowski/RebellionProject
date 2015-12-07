@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RebellionDatabase" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60695/RebellionDatabase.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60695/RebellionDatabase.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:60695/RebellionDatabase.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRebellionDatabase_ViewGroupDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewGroupDatabase" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_ViewGroupDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewGroupDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_CreateNewGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewGroup" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_CreateNewGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_CreateNewMission_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewMission" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_CreateNewMission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewMissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_createNewRebel_InputMessage">
+    <wsdl:part name="parameters" element="tns:createNewRebel" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_createNewRebel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createNewRebelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_DeleteRebel_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRebel" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_DeleteRebel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRebelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindGroup" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindMission_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindMission" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindMission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindMissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindRebel_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRebel" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_FindRebel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRebelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateAGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAGroup" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateAGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateAMission_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAMission" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateAMission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAMissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateARebel_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateARebel" />
+  </wsdl:message>
+  <wsdl:message name="IRebellionDatabase_UpdateARebel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateARebelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRebellionDatabase">
+    <wsdl:operation name="ViewGroupDatabase">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/ViewGroupDatabase" message="tns:IRebellionDatabase_ViewGroupDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/ViewGroupDatabaseResponse" message="tns:IRebellionDatabase_ViewGroupDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/CreateNewGroup" message="tns:IRebellionDatabase_CreateNewGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/CreateNewGroupResponse" message="tns:IRebellionDatabase_CreateNewGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewMission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/CreateNewMission" message="tns:IRebellionDatabase_CreateNewMission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/CreateNewMissionResponse" message="tns:IRebellionDatabase_CreateNewMission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createNewRebel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/createNewRebel" message="tns:IRebellionDatabase_createNewRebel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/createNewRebelResponse" message="tns:IRebellionDatabase_createNewRebel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRebel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/DeleteRebel" message="tns:IRebellionDatabase_DeleteRebel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/DeleteRebelResponse" message="tns:IRebellionDatabase_DeleteRebel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/FindGroup" message="tns:IRebellionDatabase_FindGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/FindGroupResponse" message="tns:IRebellionDatabase_FindGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindMission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/FindMission" message="tns:IRebellionDatabase_FindMission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/FindMissionResponse" message="tns:IRebellionDatabase_FindMission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRebel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/FindRebel" message="tns:IRebellionDatabase_FindRebel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/FindRebelResponse" message="tns:IRebellionDatabase_FindRebel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateAGroup" message="tns:IRebellionDatabase_UpdateAGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateAGroupResponse" message="tns:IRebellionDatabase_UpdateAGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAMission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateAMission" message="tns:IRebellionDatabase_UpdateAMission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateAMissionResponse" message="tns:IRebellionDatabase_UpdateAMission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateARebel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateARebel" message="tns:IRebellionDatabase_UpdateARebel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRebellionDatabase/UpdateARebelResponse" message="tns:IRebellionDatabase_UpdateARebel_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRebellionDatabase" type="tns:IRebellionDatabase">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ViewGroupDatabase">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/ViewGroupDatabase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewGroup">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/CreateNewGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewMission">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/CreateNewMission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createNewRebel">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/createNewRebel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRebel">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/DeleteRebel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindGroup">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/FindGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindMission">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/FindMission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRebel">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/FindRebel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAGroup">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/UpdateAGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAMission">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/UpdateAMission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateARebel">
+      <soap:operation soapAction="http://tempuri.org/IRebellionDatabase/UpdateARebel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RebellionDatabase">
+    <wsdl:port name="BasicHttpBinding_IRebellionDatabase" binding="tns:BasicHttpBinding_IRebellionDatabase">
+      <soap:address location="http://localhost:60695/RebellionDatabase.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
