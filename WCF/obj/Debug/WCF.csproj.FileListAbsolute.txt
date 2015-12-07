@@ -3,13 +3,15 @@ C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\bin\Debu
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\bin\Debug\WCF.pdb
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\obj\Debug\WCF.dll
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\obj\Debug\WCF.pdb
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\WCF.dll.config
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\WCF.dll
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\WCF.pdb
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\EntityFramework.dll
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\EntityFramework.xml
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\obj\Debug\WCF.csprojResolveAssemblyReference.cache
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\obj\Debug\WCF.dll
-C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\WCF\obj\Debug\WCF.pdb
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\WCF.dll.config
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\WCF.dll
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\WCF.pdb
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\obj\Debug\WCF.csprojResolveAssemblyReference.cache
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\obj\Debug\WCF.dll
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\obj\Debug\WCF.pdb
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\Model.dll
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\EntityFramework.dll
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\Model.pdb
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\EntityFramework.xml
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\francel.herrera\Documents\DotNet\Week2\Day5\RebProject\Project\WCF\bin\Debug\EntityFramework.SqlServer.xml
