@@ -8,7 +8,7 @@ namespace Model.Update
 {
     public class UpdateRebel
     {
-        private void UpdateARebel(string NewName, int ID, int GroupID)
+        public void UpdateARebel(string NewName, int ID, int GroupID)
         {
             int id = ID;
             string newName = NewName;

@@ -52,7 +52,7 @@
     <Compile Include="Add\AddGroup.cs" />
     <Compile Include="Add\AddMission.cs" />
     <Compile Include="Add\AddRebel.cs" />
-    <Compile Include="Delete\DeleteRebelById.cs" />
+    <Compile Include="Delete\DeleteRebelByID.cs" />
     <Compile Include="Group.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

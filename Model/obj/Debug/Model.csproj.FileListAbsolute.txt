@@ -18,3 +18,13 @@ C:\Users\gael.bouyer\Source\Repos\RebellionProject\Model\bin\Debug\EntityFramewo
 C:\Users\gael.bouyer\Source\Repos\RebellionProject\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\gael.bouyer\Source\Repos\RebellionProject\Model\obj\Debug\Model.dll
 C:\Users\gael.bouyer\Source\Repos\RebellionProject\Model\obj\Debug\Model.pdb
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\Model.dll.config
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\Model.dll
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\Model.pdb
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\EntityFramework.dll
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\EntityFramework.xml
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\obj\Debug\Model.dll
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\obj\Debug\Model.pdb
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -11,21 +11,22 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <!--This is the top of the page-->
-            <RowDefinition />
+            <RowDefinition Height="83*" />
+            <RowDefinition Height="47*"></RowDefinition>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="83*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Edit Rebel" FontSize="25" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center"/>
-
-        <Grid Grid.Row="1">
-
+       <!-- <TextBlock Text="Edit Rebel" FontSize="25" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" Margin="0,8"/>-->
+        <TextBox Text="Enter blaa" Grid.Row="1" Margin="61,10,10,25"></TextBox>
+        <TextBox Grid.Row="1" Margin="61,73,0,15" HorizontalAlignment="Left" Width="229" Grid.RowSpan="2"/>
+        <Grid Grid.Row="1" Margin="0,0,0,25">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
-            <TextBox Grid.Row="0"  Margin="10,10" />
-            <TextBlock  Name="EnterRebelIdTextBox" Text=" Enter Rebel ID" Margin="10,10" TextAlignment="Left" VerticalAlignment="Center" Foreground="LightGray"/>
-            <Button Command="{Binding EditRebelButton}" CommandParameter="{Binding Text, ElementName=EnterRebelIdTextBox}" Grid.Row="1"  Margin="10,10" Content="Edit Rebel" Background="LightGray"/>
+            <Button Command="{Binding EditRebelButton}" CommandParameter="{Binding Text, ElementName=EnterRebelIdTextBox}" Grid.Row="1"  Margin="40,171,118,-187" Content="Edit Rebel" Background="LightGray"/>
         </Grid>
+        <TextBox Grid.Row="3" Margin="61,0,0,0" HorizontalAlignment="Left" Width="229"/>
     </Grid>
 </Page>
