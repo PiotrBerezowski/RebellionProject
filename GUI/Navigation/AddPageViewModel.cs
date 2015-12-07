@@ -88,10 +88,6 @@ namespace GUI.Navigation
                 MessageBox.Show("Sorry, a rebel is already associated with ID number " + rebelId + ". Please try another ID.");
         }
 
-
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
         private void onPropertyChanged(string propertyName)
         {

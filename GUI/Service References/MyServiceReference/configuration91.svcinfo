@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="6bz9RFjjTRM4QE+5jeIMLFalrjc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="PveE70kDkMrouLptBeZURi/LLvA=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IRebellionDatabase">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IRebellionDatabase" contract="MyServiceReference.IRebellionDatabase" bindingType="basicHttpBinding" address="http://localhost:60695/RebellionDatabase.svc" bindingConfiguration="BasicHttpBinding_IRebellionDatabase">
+    <endpoint name="BasicHttpBinding_IRebellionDatabase" contract="MyServiceReference.IRebellionDatabase" bindingType="basicHttpBinding" address="http://localhost:55116/RebellionDatabase.svc" bindingConfiguration="BasicHttpBinding_IRebellionDatabase">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:60695/RebellionDatabase.svc</serializedValue>
+          <serializedValue>http://localhost:55116/RebellionDatabase.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
