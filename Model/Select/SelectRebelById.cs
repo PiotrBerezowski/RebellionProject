@@ -26,7 +26,7 @@ namespace Model.Select
             catch (Exception)
             {
 
-                throw;
+                return null;
             }
         }
     }

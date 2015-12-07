@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\GUI\obj\Debug\
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\GUI\obj\Debug\
 GUI
 none
 false
 DEBUG;TRACE
-C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\GUI\App.xaml
-6-876785668
+C:\Users\Tolani.Jaiye-Tikolo\Desktop\Rebellion\GUI\App.xaml
+6-1006042186
 
-13278040942
-12-1401562060
-AddPage.xaml;DeletePage.xaml;EditPage.xaml;FindPage.xaml;HomePage.xaml;MainWindow.xaml;
+21-1296684252
+181087096796
+Navigation\AddPage.xaml;Navigation\DeletePage.xaml;Navigation\EditPage.xaml;Navigation\FindPage.xaml;Navigation\Homepage.xaml;MainWindow.xaml;
 
 False
 
