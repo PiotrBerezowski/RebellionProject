@@ -20,6 +20,7 @@ namespace UnitTesting
       dbSet.As<IQueryable<T>>().Setup(m => m.ElementType).Returns(queryable.ElementType);
       dbSet.As<IQueryable<T>>().Setup(m => m.GetEnumerator()).Returns(() => queryable.GetEnumerator());
       dbSet.Setup(d => d.Add(It.IsAny<T>())).Callback<T>((s) => sourceList.Add(s));
+      dbSet.Setup(d => d.Remove(It.IsAny<T>())).Callback<T>((s) => sourceList.Remove(s));
 
       return dbSet.Object;
     }

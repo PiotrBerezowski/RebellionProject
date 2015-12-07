@@ -59,5 +59,31 @@ namespace UnitTesting
       //Assert
       Assert.AreEqual(0, context.Object.Rebels.Count());
     }
+
+    [TestMethod]
+    [ExpectedException(typeof(InvalidOperationException))] 
+    public void Test_DeleteRebel_CatchesExceptionIfIncorrectIdGiven()
+    {
+      //Arrange
+
+      //Act
+      delete.DeleteRebel(2);
+
+      //Assert
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentNullException))]
+    public void Test_DeleteRebel_CatchesExceptionIfCantConnect()
+    {
+      //Arrange
+      Mock<RebellionDataEntities> fakeContext = new Mock<RebellionDataEntities>();
+      DeleteRebelByID fakedelete = new DeleteRebelByID(fakeContext.Object);
+
+      //Act
+      fakedelete.DeleteRebel(1);
+
+      //Assert
+    }
   }
 }

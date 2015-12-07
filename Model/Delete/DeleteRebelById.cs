@@ -18,11 +18,10 @@ namespace Model
     {
       try
       {
-        int ID = id;
         string codename = String.Empty;
         using (context)
         {
-          Rebel rebel = context.Rebels.Where<Rebel>(t => t.rebel_id == ID).First();
+          Rebel rebel = context.Rebels.Where<Rebel>(t => t.rebel_id == id).First();
           codename = rebel.code_name;
           context.Rebels.Remove(rebel);
           context.SaveChanges();
