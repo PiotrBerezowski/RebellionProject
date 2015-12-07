@@ -8,17 +8,20 @@ namespace Model.Select
 {
     public class SelectRebelByID
     {
+      private RebellionDataEntities context;
+
+      public SelectRebelByID(RebellionDataEntities Context)
+      {
+        context = Context;
+      }
         public string FindRebel(int id)
         {
             try
             {
-                int ID = id;
-                string codename = String.Empty;
-                using (var context = new RebellionDataEntities())
+                using (context )
                 {
-                    codename = context.Rebels.Find(ID).code_name;
+                  return context.Rebels.Where<Rebel>(m => m.rebel_id == id).First().code_name;
                 }
-                return codename;
             }
             catch (Exception)
             {

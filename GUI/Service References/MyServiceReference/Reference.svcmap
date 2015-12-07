@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="12ba42c5-e3e5-41f1-8ffb-e89e8c92f47f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55116/RebellionDatabase.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RebellionDatabase.xsd" MetadataType="Schema" ID="95e0217b-ae92-4ca6-9e4d-6ae9fed7b252" SourceId="1" SourceUrl="http://localhost:55116/RebellionDatabase.svc?xsd=xsd2" />
+    <MetadataFile FileName="RebellionDatabase1.xsd" MetadataType="Schema" ID="db39b8ee-70d4-459a-82d8-ae5a4f733a2f" SourceId="1" SourceUrl="http://localhost:55116/RebellionDatabase.svc?xsd=xsd1" />
+    <MetadataFile FileName="RebellionDatabase2.xsd" MetadataType="Schema" ID="8ff5f1e7-3682-4d70-8140-86e8e7ab64c3" SourceId="1" SourceUrl="http://localhost:55116/RebellionDatabase.svc?xsd=xsd0" />
+    <MetadataFile FileName="RebellionDatabase.disco" MetadataType="Disco" ID="06cd2ffc-06aa-4b47-bb13-7dc6045db522" SourceId="1" SourceUrl="http://localhost:55116/RebellionDatabase.svc?disco" />
+    <MetadataFile FileName="RebellionDatabase.wsdl" MetadataType="Wsdl" ID="c0fffcfd-0148-4dfa-85d3-a0b2ba7bd28d" SourceId="1" SourceUrl="http://localhost:55116/RebellionDatabase.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
