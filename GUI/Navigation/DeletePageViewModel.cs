@@ -58,6 +58,21 @@ namespace GUI.Navigation
             set { _DeleteButton = value; }
         }
 
+
+        private ICommand _DeleteButton2;
+        public ICommand DeleteButton2
+        {
+            get
+            {
+                if (_DeleteButton2 == null)
+                {
+                    _DeleteButton2 = new Command<string>(DeleteRebel2, CanDeleteRebel);
+                }
+                return _DeleteButton2;
+            }
+            set { _DeleteButton2 = value; }
+        }
+
         int value;
 
 
@@ -71,7 +86,23 @@ namespace GUI.Navigation
             {
                 int IdToInt = int.Parse(Id);
                 //deletedName = delete.DeleteRebelWCF(IdToInt);
-                //MessageBox.Show("Delete");
+                MessageBox.Show("Our fallen comrade died well, may he rest in peace.");
+            }
+            else
+            {
+                MessageBox.Show("Enter Id");
+            }
+
+
+        }
+
+        private void DeleteRebel2(string Id)
+        {
+            if (int.TryParse(Id, out value))
+            {
+                int IdToInt = int.Parse(Id);
+                //deletedName = delete.DeleteRebelWCF(IdToInt);
+                MessageBox.Show("This treacherous scum will burn in the fire of a thousand desert suns!");
             }
             else
             {
