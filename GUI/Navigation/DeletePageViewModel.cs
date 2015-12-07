@@ -71,7 +71,7 @@ namespace GUI.Navigation
             if (int.TryParse(Id,out value))
             {
                 int IdToInt = int.Parse(Id);
-                deletedName = delete.DeleteRebelWCF(IdToInt);
+                //deletedName = delete.DeleteRebelWCF(IdToInt);
                 //MessageBox.Show("Delete");
             }
             else
