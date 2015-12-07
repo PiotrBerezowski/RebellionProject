@@ -3,3 +3,13 @@ C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\bin\Debu
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\bin\Debug\WCF.pdb
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\obj\Debug\WCF.dll
 C:\Users\Piotr.Berezowski\Documents\New folder\RebellionProject\GUI\WCF\obj\Debug\WCF.pdb
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\WCF.dll.config
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\WCF.dll
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\WCF.pdb
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\obj\Debug\WCF.csprojResolveAssemblyReference.cache
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\obj\Debug\WCF.dll
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\obj\Debug\WCF.pdb
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\EntityFramework.dll
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\EntityFramework.xml
+C:\Users\gael.bouyer\Source\Repos\RebellionProject\WCF\bin\Debug\EntityFramework.SqlServer.xml
