@@ -8,17 +8,19 @@ namespace Model.Select
 {
     public class SelectGroupByID
     {
+      private RebellionDataEntities context;
+      public SelectGroupByID(RebellionDataEntities Context)
+      {
+        context = Context;
+      }
         public string FindGroup(int id)
         {
             try
             {
-                int ID = id;
-                string groupName = String.Empty;
-                using (var context = new RebellionDataEntities())
+                using (context)
                 {
-                    groupName = context.Groups.Find(ID).group_name;
+                  return context.Groups.Where<Group>(m => m.group_id == id).First().group_name;
                 }
-                return groupName;
             }
             catch (Exception)
             {

@@ -8,17 +8,19 @@ namespace Model.Select
 {
     public class SelectMissionByID
     {
+      private RebellionDataEntities context;
+      public SelectMissionByID(RebellionDataEntities Context)
+      {
+        context = Context;
+      }
         public string FindMission(int id)
         {
             try
             {
-                int ID = id;
-                string missionName = String.Empty;
-                using (var context = new RebellionDataEntities())
+                using (context)
                 {
-                    missionName = context.Missions.Find(ID).mission_name;
+                  return context.Missions.Where<Mission>(m => m.mission_id == id).First().mission_name;
                 }
-                return missionName;
             }
             catch (Exception)
             {

@@ -6,31 +6,34 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class DeleteRebelByID
-    {
-        public string DeleteRebel(int id)
-        {
-            try
-            {
-                int ID = id;
-                string codename = String.Empty;
-                using (var context = new RebellionDataEntities())
-                {
-                    List<Rebel> rebelList = context.Rebels.Where<Rebel>(t => t.rebel_id == ID).ToList();
-                    foreach (Rebel rebel in rebelList)
-                    {
-                        codename = context.Rebels.Find(ID).code_name;
-                        context.Rebels.Remove(rebel);
-                    }
-                    context.SaveChanges();
-                }
-                return codename;
-            }
-            catch (Exception)
-            {
+  public class DeleteRebelByID
+  {
+    private RebellionDataEntities context;
 
-                throw;
-            }
-        }
+    public DeleteRebelByID(RebellionDataEntities Context)
+    {
+      context = Context;
     }
+    public string DeleteRebel(int id)
+    {
+      try
+      {
+        int ID = id;
+        string codename = String.Empty;
+        using (context)
+        {
+          Rebel rebel = context.Rebels.Where<Rebel>(t => t.rebel_id == ID).First();
+          codename = rebel.code_name;
+          context.Rebels.Remove(rebel);
+          context.SaveChanges();
+        }
+        return codename;
+      }
+      catch (Exception)
+      {
+
+        throw;
+      }
+    }
+  }
 }
