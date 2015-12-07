@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using WCF;
 
 namespace GUI.Navigation
 {
@@ -13,6 +15,7 @@ namespace GUI.Navigation
         public DeletePageViewModel()
         {
             source = "DeletePage.xaml";
+            deletedName = "Enter an ID";
         }
 
         private string _source;
@@ -22,6 +25,7 @@ namespace GUI.Navigation
             set { _source = value; }
         }
 
+        //Confirmation of deleted rebel, name to be displayed in popup
         private int _rebelId;
         public int rebelId
         {
@@ -33,6 +37,14 @@ namespace GUI.Navigation
             }
         }
 
+        private string _deletedName;
+        public string deletedName
+        {
+            get { return _deletedName; }
+            set { _deletedName = value; }
+        }
+        
+
         private ICommand _DeleteButton;
         public ICommand DeleteButton
         {
@@ -40,20 +52,34 @@ namespace GUI.Navigation
             {
                 if (_DeleteButton == null)
                 {
-                    _DeleteButton = new Command(DeleteRebel, CanDeleteRebel);
+                    _DeleteButton = new Command<string>(DeleteRebel, CanDeleteRebel);
                 }
                 return _DeleteButton; 
             }
             set { _DeleteButton = value; }
         }
 
-        private bool CanDeleteRebel()
+        int value;
+
+
+        private bool CanDeleteRebel(string Id)
         {
             return true;
         }
-        private void DeleteRebel()
+        private void DeleteRebel(string Id)
         {
-            //Do Something
+            if (int.TryParse(Id,out value))
+            {
+                int IdToInt = int.Parse(Id);
+                deletedName = delete.DeleteRebelWCF(IdToInt);
+                //MessageBox.Show("Delete");
+            }
+            else
+            {
+                MessageBox.Show("Enter Id");
+            }
+
+
         }
         
         public event PropertyChangedEventHandler PropertyChanged;
